@@ -1,8 +1,8 @@
 {
-  "name": "ngx-link-preview",
+  "name": "arj-link-preview",
   "version": "0.0.0",
   "description": "Link previewer reading the Open Graph tags",
-  "author": "Martín Martorell",
+  "author": "arekjaar",
   "repository": {
     "type": "git",
     "url": "https://github.com/Arekjaar4/linkpreview.git"
