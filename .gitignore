@@ -32,6 +32,7 @@ chrome-profiler-events*.json
 
 # environment files
 environment.prod.ts
+.npmrc
 
 # misc
 /.sass-cache
