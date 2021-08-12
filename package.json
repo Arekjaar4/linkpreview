@@ -3,6 +3,21 @@
   "version": "0.0.0",
   "description": "Link previewer reading the Open Graph tags",
   "author": "Martín Martorell",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Arekjaar4/linkpreview.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Arekjaar4/linkpreview/issues"
+  },
+  "homepage": "https://github.com/Arekjaar4/linkpreview",
+  "keywords": [
+    "link",
+    "preview",
+    "angular",
+    "open graph",
+    "opengraph"
+  ],
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
