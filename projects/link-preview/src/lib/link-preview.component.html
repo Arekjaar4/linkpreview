@@ -1,0 +1,18 @@
+<div *ngIf='(url | async) || fixUrl.length > 0' [class]='type' [style.background]='background' [style.color]='fontColor'
+[style.height.px]='height' [style.width.px]='width' (click)='openPage(data.url)'>
+  <div class='image' *ngIf='data !== undefined && data.image !== undefined && data.image.length > 0' [style.height.px]='heightImg' [style.width.px]='widthImg'>
+    <img [src]='data.image'>
+  </div>
+  <div class='site_name' *ngIf='data !== undefined && data.site_name !== undefined && data.site_name.length > 0' [style.width.px]='widthRow' [style.margin-bottom.px]='fontSizeH5'>
+    <div class='h2' [style.font-size.px]='fontSizeH2' [style.line-height.px]='fontSizeH2'>{{data.site_name}}</div>
+  </div>
+  <div class='title' *ngIf='data !== undefined && data.title !== undefined && data.title.length > 0' [style.width.px]='widthRow' [style.margin-bottom.px]='fontSizeH5'>
+    <div>
+      <div class='h3' [style.font-size.px]='fontSizeH3' [style.line-height.px]='fontSizeH3'>{{data.title}}</div>
+      <div class='h5' *ngIf='data.url !== undefined' [style.font-size.px]='fontSizeH5' [style.line-height.px]='fontSizeH5'>{{cutUrl(data.url)}}</div>
+    </div>
+  </div>
+  <div class='description' *ngIf='data !== undefined && data.description !== undefined && data.description.length > 0' [style.width.px]='widthRow' [style.margin-bottom.px]='fontSizeH5'>
+    <div class='h4' [style.font-size.px]='fontSizeH4' [style.line-height.px]='fontSizeH4'>{{cutText(data.description, fontSizeH4, widthRow)}}</div>
+  </div>
+</div>

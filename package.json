@@ -1,6 +1,8 @@
 {
-  "name": "link-preview",
+  "name": "ngx-link-preview",
   "version": "0.0.0",
+  "description": "Link previewer reading the Open Graph tags",
+  "author": "Martín Martorell",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
@@ -10,7 +12,7 @@
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "~12.0.5",
+    "@angular/cdk": "12.2.0",
     "@angular/common": "~12.0.5",
     "@angular/compiler": "~12.0.5",
     "@angular/core": "~12.0.5",
@@ -23,6 +25,7 @@
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
+    "@angular-devkit/build-angular": "~12.0.5",
     "@angular/cli": "~12.0.5",
     "@angular/compiler-cli": "~12.0.5",
     "@types/jasmine": "~3.6.0",
@@ -33,6 +36,7 @@
     "karma-coverage": "~2.0.3",
     "karma-jasmine": "~4.0.0",
     "karma-jasmine-html-reporter": "^1.5.0",
+    "ng-packagr": "^12.0.0",
     "typescript": "~4.2.3"
   }
 }
