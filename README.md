@@ -1,5 +1,5 @@
 
-# Project Title
+# LinkPreview
 
 Link previewer reading the Open Graph tags
 
