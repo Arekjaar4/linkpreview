@@ -5,7 +5,7 @@ import { Observable } from 'rxjs';
 import { Subject } from 'rxjs';
 
 @Component({
-  selector: 'arj-link-preview',
+  selector: 'link-preview',
   templateUrl: './link-preview.component.html',
   styleUrls: ['./link-preview.component.scss']
 })

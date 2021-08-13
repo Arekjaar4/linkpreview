@@ -1,6 +1,6 @@
 {
-  "name": "arj-link-preview",
-  "version": "0.0.0",
+  "name": "@arekjaar/link-preview",
+  "version": "0.0.1",
   "description": "Link previewer reading the Open Graph tags",
   "author": "arekjaar",
   "repository": {
@@ -31,10 +31,6 @@
     "@angular/common": "~12.0.5",
     "@angular/compiler": "~12.0.5",
     "@angular/core": "~12.0.5",
-    "@angular/forms": "~12.0.5",
-    "@angular/platform-browser": "~12.0.5",
-    "@angular/platform-browser-dynamic": "~12.0.5",
-    "@angular/router": "~12.0.5",
     "rxjs": "~6.6.0",
     "tslib": "^2.1.0",
     "zone.js": "~0.11.4"
