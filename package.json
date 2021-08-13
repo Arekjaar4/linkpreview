@@ -1,6 +1,6 @@
 {
   "name": "@arekjaar/link-preview",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Link previewer reading the Open Graph tags",
   "author": "arekjaar",
   "repository": {

@@ -1,27 +1,76 @@
-# LinkPreview
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.0.5.
+# Project Title
 
-## Development server
+Link previewer reading the Open Graph tags
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-## Code scaffolding
+## Demo
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+https://test-link-preview.herokuapp.com/
 
-## Build
+  
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+Install link-preview with npm
 
-## Running unit tests
+```bash
+  npm i --save @arekjaar/link-preview
+```
+    
+## Screenshots
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+![App Screenshot](https://drive.google.com/uc?id=11wdnLmzgxI5F-JlS3dsscViJeqlnp7Oz)
+![App Screenshot](https://drive.google.com/uc?id=1B1v0sCfpVC0NdF1Mejq0Meyh8xbBIlYs)
 
-## Running end-to-end tests
+  
+## Features
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+- Configurable background color ```[background]```
+- Configurable font color ```[fontColor]```
+- Configurable preview size ```[size]```
+- Fixed url ```[fixUrl]```
+- Dynamic url ```[url]```
+- Theming: ```rectangle-image-left```, ```rectangle-image-right```, ```square-image-up```, ```square-image-down```, ```square-image-center```
 
-## Further help
+  
+## Usage/Examples
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+app.module.ts
+```javascript
+import { LinkPreviewModule } from '@arekjaar/link-preview';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    LinkPreviewModule,
+    HttpClientModule
+  ],
+  providers: [],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
+app.component.html
+```html
+<div [style.padding]='"10px"'>
+<link-preview [url]='url1' [type]='"rectangle-image-right"' [fixUrl]='"https://freecons.herokuapp.com/"' [size]=400 [fontColor]='"white"' [background]='"black"'></link-preview>
+<mat-form-field class="example-full-width" appearance="fill">
+  <mat-label>Set url and click out</mat-label>
+  <input matInput (change)='setUrl1($event)'>
+</mat-form-field>
+</div>
+```
+app.component.ts
+```javascript
+public url1: Subject<string> = new Subject();
+
+setUrl1(event: any){
+      if (event.target.value !== '') {
+      this.url1.next(event.target.value);
+      }
+    }
+```
+
+  
