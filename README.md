@@ -73,4 +73,12 @@ setUrl1(event: any){
     }
 ```
 
+# Hi, Do you want to collaborate by inviting me to a coffee? 👋
+
+[![buymeacoffee](https://drive.google.com/uc?id=1lFRr7rhDH66bqb7SKIIPQ2YslcnGdu4_)](https://www.buymeacoffee.com/martinmul)
+
+# Keywords
+
+link, preview, angular, open graph, opengraph
+
   
